@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALBION Calculadora</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>  
+        <img src="https://cdn2.steamgriddb.com/logo_thumb/a028123bdd01ea9ff8dc3c780e9c0cd8.png" alt="ALBION ONLINE" >   
+    </header>
+    <div id="back">
+
+    </div>
+    <form>
+        <p>
+            Nome do item:
+            <br>
+            <input type="text" id="inName_item" required>
+        </p>
+        <p>
+            Quantidade:
+            <br>
+            <input type="number" id="inQtde" required>
+        </p>
+        <p>
+            Valor Pago:
+            <br>
+            <input type="number" id="inValor_item" min="0" required >
+        </p>
+        <p>
+            Runas por item:
+            <br>
+            <input type="number" id="inRune_item" min="0" required>
+        </p>
+        <p>
+            Valor da runa(unitario):
+            <br>
+            <input type="number" id="inValor_rune" min="0" required>
+        </p>
+        <p>
+            Valor do item(aprimorado):
+            <br>
+            <input type="number" id="inValor_plus" min="0" required>
+        </p>
+        <p >
+            Premium
+            <input type="checkbox" id="inPremium">
+            <!--transformar em um botao com efeito deslizante-->
+            <img src="https://www.portaldoscreditos.com.br/images/stories/virtuemart/product/crown-4.png" alt="Premium">
+        </p>
+
+        <br>
+        <input type="submit" value="Calcular seu lucro $">
+        
+        <br>
+    </form>
+    <div id="tabela">
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Quantidade</th>
+                    <th>Nome do item</th>
+                    <th>Valor Pago</th>
+                    <th>Runas por item</th>
+                    <th>Valor das runas(unitario)</th>
+                    <th>Quantidade de runas</th>
+                    <th>Valor total das runas </th>
+                    <th>Valor Total</th>
+                    <th>Valor do item aprimorado(unitario)</th>
+                    <th>Lucro</th>
+                </tr>
+            </thead>
+            <tbody id="result_table">
+                <tr>
+                    
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
