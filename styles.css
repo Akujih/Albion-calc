@@ -106,7 +106,6 @@ td {
     }
 
 }
-
 @media (max-width:1280px) {
     form {
         left: 35%;
@@ -115,12 +114,10 @@ td {
     #tabela {
         left: 20px;
     }
-
 }
-
-@media (max-width:812px) {
+@media (max-width:1080px) {
     header {
-        width: 930px;
+        width: 1080px;
     }
 
     form {
@@ -129,12 +126,25 @@ td {
         top: 0px;
         left: 35%;
     }
-
     #tabela {
         margin: 10px 10px;
         position: absolute;
         left: 0px;
-
     }
-
+}
+@media (max-width:812px) {
+    header {
+        width: 930px;
+    }
+    form {
+        width: 350px;
+        position: relative;
+        top: 0px;
+        left: 35%;
+    }
+    #tabela {
+        margin: 10px 10px;
+        position: absolute;
+        left: 0px;
+    }
 }
