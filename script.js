@@ -1,7 +1,19 @@
 const frm = document.querySelector("form")
 const resulttable = document.querySelector("#result_table")
-const icon = document.querySelector("#inPremium")
 //pego do form as respostas e exporta as saidas na tabela
+
+document.addEventListener('DOMContentLoaded', function() {
+    const checkbox = document.getElementById('inPremium');
+    const premiumIcon = document.getElementById('premiumicone');
+
+    checkbox.addEventListener('change', function() {
+        if (checkbox.checked) {
+            premiumIcon.classList.add('nofilter'); // Adiciona a classe quando marcado
+        } else {
+            premiumIcon.classList.remove('nofilter'); // Remove a classe quando desmarcado
+        }
+    });
+});
 
 frm.addEventListener("submit" , (e)=>{
     e.preventDefault()
@@ -15,10 +27,6 @@ frm.addEventListener("submit" , (e)=>{
     const Valor_plus = Number(frm.inValor_plus.value)
     const Premium = frm.inPremium.checked
 
-//verificar se esta marcado ou não
-icon.addEventListener("change",()=>{
-    document.body.classList.toggle("nofilter")
-})
 
 //calculos
 
@@ -28,9 +36,10 @@ const c_total = ((Qtde*Valor_item)+c_totalrune)
 let c_lucro //verificador se tem premium ou não
 if(Premium == true){
     c_lucro = (((Valor_plus*Qtde)*0.925)-c_total) //com premium
-    
+    premiumIcon.classList.add("nofilter")
 }else{
     c_lucro = (((Valor_plus*Qtde)*0.895)-c_total) //sem premium
+    premiumIcon.classList.remove("nofilter")
 }
 
 

@@ -25,14 +25,14 @@ header{
 }
 header img{
     height: 100px;
-    position: fixed;
+    position: absolute;
     margin-left: 10px;
     left:0px;
 }
 form{
     width: 400px;
     position: relative;
-    top: 0px;
+    top: 10px;
     left: 40%;
     border: 2px solid black;
     border-radius: 10px;
@@ -51,10 +51,12 @@ p{
 }
 #tabela{
     background-color: #ddd;
-    margin: 10px 50px;
+    margin: 20px 50px;
     position: absolute;
     padding: 5px;
     border-radius: 10px;
+    left: 250px;
+    ;
 
 }
 td, th{
@@ -69,13 +71,23 @@ th{
 td{
     text-align: center;
 }
-#premiumicon img{
-    width: 50px;
-    transition: .8s;
+#premiumicone {
+    width: 15%;
+    position: relative;
+    left: 40%;
     filter: grayscale();
-}
+    }
 .nofilter{
     filter: none;
+}
+@media (max-width:1366px){
+    form{
+        left: 35%;
+    }
+    #tabela{
+        left: 20px;
+    }
+
 }
 
 
