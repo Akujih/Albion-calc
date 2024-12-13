@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     text-decoration: none;
@@ -7,7 +8,8 @@
     font-weight: 400;
     font-style: normal;
 }
-#back{
+
+#back {
     background-image: url('https://assets.albiononline.com/uploads/media/default/media/a4ce860061a2e35622b3cade9550ebe9e10e0cd8.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -16,20 +18,26 @@
     position: fixed;
     top: 0;
     z-index: -1;
-}   
-header{
+}
+
+header {
     background-color: rgba(20, 13, 88, 0.788);
     text-align: center;
     height: 100px;
     width: 100%;
+    font-size: 40px;
+    color: white;
+
 }
-header img{
+
+header img {
     height: 100px;
     position: absolute;
     margin-left: 10px;
-    left:0px;
+    left: 0px;
 }
-form{
+
+form {
     width: 400px;
     position: relative;
     top: 10px;
@@ -40,54 +48,93 @@ form{
     flex-direction: column;
     align-items: center;
     padding: 10px;
-    box-shadow: 10px 10px 15px 5px rgba(0,0,0,0.5);
+    box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.5);
     background-color: rgba(255, 255, 255, 0.582);
 }
-p{
+
+p {
     justify-content: center;
     align-items: center;
     justify-items: center;
     padding-top: 10px;
 }
-#tabela{
+
+#tabela {
     background-color: #ddd;
     margin: 20px 50px;
     position: absolute;
     padding: 5px;
     border-radius: 10px;
     left: 250px;
-    ;
 
 }
-td, th{
+
+td,
+th {
     border: 1px solid #ddd;
 }
-th{
+
+th {
     padding: 10px;
     background-color: #f4f4f4;
     display: inline block;
 
 }
-td{
+
+td {
     text-align: center;
 }
+
 #premiumicone {
     width: 15%;
     position: relative;
     left: 40%;
     filter: grayscale();
-    }
-.nofilter{
+}
+
+.nofilter {
     filter: none;
 }
-@media (max-width:1366px){
-    form{
+
+@media (max-width:1440px) {
+    form {
         left: 35%;
     }
-    #tabela{
+
+    #tabela {
         left: 20px;
     }
 
 }
 
+@media (max-width:1280px) {
+    form {
+        left: 35%;
+    }
 
+    #tabela {
+        left: 20px;
+    }
+
+}
+
+@media (max-width:812px) {
+    header {
+        width: 930px;
+    }
+
+    form {
+        width: 350px;
+        position: relative;
+        top: 0px;
+        left: 35%;
+    }
+
+    #tabela {
+        margin: 10px 10px;
+        position: absolute;
+        left: 0px;
+
+    }
+
+}
