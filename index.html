@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ALBION Calculadora</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <header>  
-        <img src="https://cdn2.steamgriddb.com/logo_thumb/a028123bdd01ea9ff8dc3c780e9c0cd8.png" alt="ALBION ONLINE" >   
-        <h1>Calculadora</h1>
+    <header>
+        <img src="https://cdn2.steamgriddb.com/logo_thumb/a028123bdd01ea9ff8dc3c780e9c0cd8.png" alt="ALBION ONLINE">
+        <h1>Calculadora de itens</h1>
     </header>
     <div id="back">
 
@@ -28,7 +30,7 @@
         <p>
             Valor Pago:
             <br>
-            <input type="number" id="inValor_item" min="0" required >
+            <input type="number" id="inValor_item" min="0" required>
         </p>
         <p>
             Runas por item:
@@ -45,19 +47,16 @@
             <br>
             <input type="number" id="inValor_plus" min="0" required>
         </p>
-        
-        <p >
+
+        <p>
             Premium
             <input type="checkbox" id="inPremium">
-            <div id="premium">
-            <!--transformar em um botao com efeito deslizante-->
-                <img id="premiumicone" src="https://www.portaldoscreditos.com.br/images/stories/virtuemart/product/crown-4.png" alt="Premium">
-            </div>
+
         </p>
 
         <br>
         <input type="submit" value="Calcular seu lucro $">
-        
+
         <br>
     </form>
     <div id="tabela">
@@ -79,11 +78,12 @@
             </thead>
             <tbody id="result_table">
                 <tr>
-                    
+
                 </tr>
             </tbody>
         </table>
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>

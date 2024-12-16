@@ -21,12 +21,12 @@
 }
 
 header {
-    background-color: rgba(20, 13, 88, 0.788);
+    background-color: rgba(255, 255, 255, 0.37);
     text-align: center;
     height: 100px;
     width: 100%;
     font-size: 40px;
-    color: white;
+    color: rgb(0, 0, 0);
 
 }
 
@@ -69,8 +69,7 @@ p {
 
 }
 
-td,
-th {
+td,th {
     border: 1px solid #ddd;
 }
 
@@ -83,17 +82,6 @@ th {
 
 td {
     text-align: center;
-}
-
-#premiumicone {
-    width: 15%;
-    position: relative;
-    left: 40%;
-    filter: grayscale();
-}
-
-.nofilter {
-    filter: none;
 }
 
 @media (max-width:1440px) {
