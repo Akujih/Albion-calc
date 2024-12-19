@@ -11,7 +11,7 @@ frm.addEventListener("submit" , (e)=>{
     const Rune_item = Number(frm.inRune_item.value)
     const Valor_rune = Number(frm.inValor_rune.value)
     const Valor_plus = Number(frm.inValor_plus.value)
-    const Premium = frm.inPremium.checked
+    const Premium = frm.btPremium.checked
 
 
 //calculos
@@ -22,10 +22,10 @@ const c_total = ((Qtde*Valor_item)+c_totalrune)
 let c_lucro //verificador se tem premium ou não
 if(Premium == true){
     c_lucro = (((Valor_plus*Qtde)*0.925)-c_total) //com premium
-    frm.inPremium.className = "none"
+
 }else{
     c_lucro = (((Valor_plus*Qtde)*0.895)-c_total) //sem premium
-    frm.inPremium.className = "grayscale"
+
 }
 
 
@@ -57,7 +57,7 @@ resulttable.appendChild(new_line)
 
 // Limpar o formulário para novos dados
 frm.reset()
-
+imPremium.className = "grayscale";
 })
 
 btPremium.addEventListener("change", (e) => {
@@ -66,4 +66,4 @@ btPremium.addEventListener("change", (e) => {
     } else {
         imPremium.className = "grayscale";
     }
-});
+})
