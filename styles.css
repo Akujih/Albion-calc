@@ -83,7 +83,18 @@ th {
 td {
     text-align: center;
 }
+#imPremium{
+    position: relative;
+    height: 50px;
 
+}
+
+.grayscale{
+    filter: grayscale(100%);
+}
+.normal{
+    filter: none;
+}
 @media (max-width:1440px) {
     form {
         left: 35%;

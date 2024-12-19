@@ -22,10 +22,10 @@ const c_total = ((Qtde*Valor_item)+c_totalrune)
 let c_lucro //verificador se tem premium ou não
 if(Premium == true){
     c_lucro = (((Valor_plus*Qtde)*0.925)-c_total) //com premium
-    
+    frm.inPremium.className = "none"
 }else{
     c_lucro = (((Valor_plus*Qtde)*0.895)-c_total) //sem premium
-
+    frm.inPremium.className = "grayscale"
 }
 
 
@@ -59,3 +59,11 @@ resulttable.appendChild(new_line)
 frm.reset()
 
 })
+
+btPremium.addEventListener("change", (e) => {
+    if (btPremium.checked) {
+        imPremium.className = "normal";
+    } else {
+        imPremium.className = "grayscale";
+    }
+});
